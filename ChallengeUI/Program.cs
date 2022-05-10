@@ -10,6 +10,23 @@ namespace ChallengeUI
     {
         static void Main(string[] args)
         {
+            Console.ReadLine();
+        }
+
+        public interface IVehicle
+        {
+            string Color { get; set; }
+            string Manufacturer { get; set; }
+            string Model { get; set; }
+            int YearBuilt { get; set; }
+
+            int Calculate();
+        }
+
+        public class Vehicle
+        {
+            public int NumberOfWheels { get; set; }
+            public int NumberOfDoors { get; set; }
         }
     }
 }
