@@ -10,7 +10,7 @@ namespace ChallengeLibrary.Models
 {
     public class ElectricCar : Vehicle, IVehicle
     {
-        public string MotorType { get; set; }
+        public MotorType MotorType { get; set; }
 
         public Color Color { get; set; }
         public Manufacturer Manufacturer { get; set; }

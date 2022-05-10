@@ -14,11 +14,16 @@ namespace ChallengeUI
         {
             List<Vehicle> vehicles = VehicleLogic.GenerateVehicleList();
 
-            foreach (Vehicle vehicle in vehicles)
+            for (int i = 0; i < vehicles.Count; i++)
             {
-                if (vehicle is IVehicle iVehicle)
+                if (vehicles[i] is GasCar gasCar)
                 {
-                    Console.WriteLine($"Manufacturer: {iVehicle.Manufacturer}, Model: {iVehicle.Model}, Color: {iVehicle.Color}, Year Built: {iVehicle.YearBuilt}, Age: {iVehicle.Calculate()}");
+                    ConsoleHelpers.PrintGasCar(gasCar, i);
+                }
+                
+                if(vehicles[i] is ElectricCar electricCar)
+                {
+                    ConsoleHelpers.PrintElectricCar(electricCar, i);
                 }
             }
 

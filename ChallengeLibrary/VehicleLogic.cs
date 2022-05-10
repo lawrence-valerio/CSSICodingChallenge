@@ -22,7 +22,10 @@ namespace ChallengeLibrary.Models
                         Color = GetColor(),
                         Manufacturer = GetManufacturer(),
                         Model = GetModel(),
-                        YearBuilt = GetYear()
+                        YearBuilt = GetYear(),
+                        EngineSize = GetEngineSize(),
+                        NumberOfDoors = 4,
+                        NumberOfWheels = 4
                     };
                     vehicles.Add(gasCar);
                 }
@@ -33,7 +36,10 @@ namespace ChallengeLibrary.Models
                         Color = GetColor(),
                         Manufacturer = GetManufacturer(),
                         Model = GetModel(),
-                        YearBuilt = GetYear()
+                        YearBuilt = GetYear(),
+                        MotorType = GetMotorType(),
+                        NumberOfDoors = 4,
+                        NumberOfWheels = 4
                     };
                     vehicles.Add(electricCar);
                 }

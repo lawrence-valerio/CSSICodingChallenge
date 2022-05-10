@@ -10,7 +10,7 @@ namespace ChallengeLibrary.Models
 {
     public class GasCar : Vehicle, IVehicle
     {
-        public string EngineSize { get; set; }
+        public EngineSize EngineSize { get; set; }
 
         public Color Color { get; set; }
         public Manufacturer Manufacturer { get; set; }
