@@ -1,4 +1,5 @@
-﻿using ChallengeLibrary.Interfaces;
+﻿using ChallengeLibrary.Enums;
+using ChallengeLibrary.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +12,14 @@ namespace ChallengeLibrary.Models
     {
         public string EngineSize { get; set; }
 
-        public string Color { get; set; }
-        public string Manufacturer { get; set; }
-        public string Model { get; set; }
+        public Color Color { get; set; }
+        public Manufacturer Manufacturer { get; set; }
+        public Model Model { get; set; }
         public int YearBuilt { get; set; }
 
         public int Calculate()
         {
-            return MathLogic.AgeCalculate(YearBuilt);
+            return MathLogic.VehicleAgeCalculate(YearBuilt);
         }
     }
 }
