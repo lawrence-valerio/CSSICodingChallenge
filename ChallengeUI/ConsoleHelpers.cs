@@ -33,7 +33,7 @@ namespace ChallengeUI
 
         public static void PrintVehicleList()
         {
-            List<Vehicle> vehicles = VehicleLogic.SortedList();
+            List<Vehicle> vehicles = VehicleLogic.SortedVehicleList();
 
             for (int i = 0; i < vehicles.Count; i++)
             {
