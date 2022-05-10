@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\Color.cs" />
+    <Compile Include="Enums\EngineSize.cs" />
     <Compile Include="Enums\Manufacturer.cs" />
     <Compile Include="Enums\Model.cs" />
+    <Compile Include="Enums\MotorType.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
     <Compile Include="Models\ElectricCar.cs" />
     <Compile Include="Models\GasCar.cs" />
