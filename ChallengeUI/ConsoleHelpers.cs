@@ -30,5 +30,23 @@ namespace ChallengeUI
             Console.WriteLine($"     Age: {electricCar.Calculate()} years");
             Console.WriteLine();
         }
+
+        public static void PrintVehicleList()
+        {
+            List<Vehicle> vehicles = VehicleLogic.GenerateVehicleList();
+
+            for (int i = 0; i < vehicles.Count; i++)
+            {
+                if (vehicles[i] is GasCar gasCar)
+                {
+                    PrintGasCar(gasCar, i);
+                }
+
+                if (vehicles[i] is ElectricCar electricCar)
+                {
+                    PrintElectricCar(electricCar, i);
+                }
+            }
+        }
     }
 }

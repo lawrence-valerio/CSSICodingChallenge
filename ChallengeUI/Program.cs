@@ -12,20 +12,7 @@ namespace ChallengeUI
     {
         static void Main(string[] args)
         {
-            List<Vehicle> vehicles = VehicleLogic.GenerateVehicleList();
-
-            for (int i = 0; i < vehicles.Count; i++)
-            {
-                if (vehicles[i] is GasCar gasCar)
-                {
-                    ConsoleHelpers.PrintGasCar(gasCar, i);
-                }
-                
-                if(vehicles[i] is ElectricCar electricCar)
-                {
-                    ConsoleHelpers.PrintElectricCar(electricCar, i);
-                }
-            }
+            ConsoleHelpers.PrintVehicleList();
 
             Console.ReadLine();
         }

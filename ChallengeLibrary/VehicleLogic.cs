@@ -15,7 +15,7 @@ namespace ChallengeLibrary.Models
             for (int i = 0; i < 10; i++)
             {
                 int randomVehicleNumber = random.Next(1, 3);
-                // DRY for this.
+
                 if (randomVehicleNumber == 1){
                     GasCar gasCar = new GasCar
                     {
