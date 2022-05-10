@@ -44,6 +44,10 @@
     <Compile Include="Enums\Color.cs" />
     <Compile Include="Enums\Manufacturer.cs" />
     <Compile Include="Enums\Model.cs" />
+    <Compile Include="Interfaces\IVehicle.cs" />
+    <Compile Include="Models\ElectricCar.cs" />
+    <Compile Include="Models\GasCar.cs" />
+    <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
