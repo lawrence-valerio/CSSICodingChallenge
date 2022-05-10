@@ -28,5 +28,20 @@ namespace ChallengeUI
             public int NumberOfWheels { get; set; }
             public int NumberOfDoors { get; set; }
         }
+
+        public class GasCar : Vehicle, IVehicle
+        {
+            public string EngineSize { get; set; }
+
+            public string Color { get; set; }
+            public string Manufacturer { get; set; }
+            public string Model { get; set; }
+            public int YearBuilt { get; set; }
+
+            public int Calculate()
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
