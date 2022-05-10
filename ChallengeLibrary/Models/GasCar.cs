@@ -18,7 +18,7 @@ namespace ChallengeLibrary.Models
 
         public int Calculate()
         {
-            throw new NotImplementedException();
+            return MathLogic.AgeCalculate(YearBuilt);
         }
     }
 }

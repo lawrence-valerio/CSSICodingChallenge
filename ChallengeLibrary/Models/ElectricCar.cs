@@ -18,7 +18,14 @@ namespace ChallengeLibrary.Models
 
         public int Calculate()
         {
-            throw new NotImplementedException();
+            int currentYear = DateTime.Now.Year;
+            int output = currentYear - YearBuilt;
+            return output;
+        }
+
+        public int YearCalculate()
+        {
+            return MathLogic.AgeCalculate(YearBuilt);
         }
     }
 }
