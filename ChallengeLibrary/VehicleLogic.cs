@@ -1,6 +1,7 @@
 ﻿using ChallengeLibrary.Enums;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengeLibrary.Models
 {
@@ -92,6 +93,29 @@ namespace ChallengeLibrary.Models
             int output = random.Next(0, modelCount);
 
             return (Model)output;
+        }
+
+        public static List<Vehicle> SortedVehicleList()
+        {
+            List<Vehicle> unsortedList = GenerateVehicleList();
+            List<Vehicle> gasCarList = new List<Vehicle>();
+            List<Vehicle> electricCarList = new List<Vehicle>();
+
+            for (int i = 0; i < unsortedList.Count; i++)
+            {
+                if (unsortedList[i] is GasCar gasCar)
+                {
+                    gasCarList.Add(gasCar);
+                }
+
+                if (unsortedList[i] is ElectricCar electricCar)
+                {
+                    electricCarList.Add(electricCar);
+                }
+            }
+
+            List<Vehicle> sortedList = gasCarList.Concat(electricCarList).ToList();
+            return sortedList;
         }
     }
 }
